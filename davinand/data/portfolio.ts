@@ -2,7 +2,7 @@
 
 export const siteConfig = {
   name: "Davina Anandia",
-  shortName: "davina.dev",
+  shortName: "davinand",
   title: "Davina Anandia — Portfolio",
   description:
     "Portfolio of Davina Anandia — Undergraduate Bachelor of Information System at Telkom University Jakarta. Tech enthusiast, Web Developer, and continuous learner.",
@@ -20,7 +20,6 @@ export const navLinks = [
 ] as const;
 
 export const hero = {
-  badge: "Available for Web Dev Opportunities",
   name: "Davina Anandia",
   headline: "Undergraduate Bachelor of Information System at",
   institution: "Telkom University Jakarta",

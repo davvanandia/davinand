@@ -11,7 +11,7 @@ export function Navbar() {
         >
           davina
           <span className="text-emerald-600 dark:text-emerald-400 font-mono">
-            .dev
+            nd
           </span>
         </a>
 

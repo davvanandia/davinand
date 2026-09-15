@@ -40,7 +40,7 @@ export function Certifications() {
 
           <div className="shrink-0">
             <a
-              href={cert.credentialUrl || "#"}
+              href={cert.credentialUrl || "https://www.linkedin.com/in/davina-anandia-34bab5329/overlay/Certifications/235561389/treasury/?profileId=ACoAAFLsJqsBDPYtG5uvVhnW5NIUTStd2J9Psqc&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BEFjbcD%2BVTRuNLotxMhCpmg%3D%3D"}
               className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg text-xs font-mono font-medium border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-700 text-zinc-700 dark:text-zinc-200 shadow-sm transition"
             >
               <svg className="w-4 h-4 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">

@@ -61,9 +61,6 @@ export function Projects() {
                 </span>
               ))}
             </div>
-            <span className="text-xs text-zinc-400 font-mono">
-              Status: Public Web App
-            </span>
           </div>
         </div>
       ))}

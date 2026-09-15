@@ -3,10 +3,6 @@ import { hero } from "@/data/portfolio";
 export function Hero() {
   return (
     <section id="about" className="space-y-6 pt-4">
-      <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-medium bg-emerald-50 text-emerald-700 dark:bg-emerald-950/50 dark:text-emerald-400 border border-emerald-200/60 dark:border-emerald-800/40">
-        <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-        {hero.badge}
-      </div>
 
       <div className="space-y-3">
         <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-zinc-950 dark:text-zinc-50">
