@@ -3,10 +3,10 @@
 export const siteConfig = {
   name: "Davina Anandia",
   shortName: "davinand",
-  title: "Davina Anandia — Portfolio",
+  title: "Davina Anandia Portfolio",
   description:
     "Portfolio of Davina Anandia — Undergraduate Bachelor of Information System at Telkom University Jakarta. Tech enthusiast, Web Developer, and continuous learner.",
-  url: "https://davinand.vercel.app",
+  url: "https://davinand.blog",
   ogImage: "/og-image.png",
   locale: "en_US",
 } as const;
