@@ -9,9 +9,20 @@
 
 @layer base {
   html {
+    /* ✅ Smooth scroll antar section */
+    scroll-behavior: smooth;
+    /* ✅ Offset supaya tidak ketutup navbar sticky (h-16 = 64px) + 16px breathing room */
+    scroll-padding-top: 5rem;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+  }
+
+  /* ♿ Hormati preferensi user yang tidak suka animasi */
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
   }
 
   ::selection {
