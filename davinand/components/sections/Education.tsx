@@ -6,7 +6,7 @@ export function Education() {
   const { number, title, meta } = sectionMeta.education;
 
   return (
-    <section id="education" className="space-y-6">
+    <section id="education" className="space-y-6 scroll-mt-20">
       <SectionHeader number={number} title={title} meta={meta} />
 
       <div className="space-y-4">
@@ -26,14 +26,14 @@ export function Education() {
                   </span>
                 )}
               </div>
-              <p className="text-sm text-zinc-600 dark:text-zinc-300">
+              <p className="text-sm text-zinc-700 dark:text-zinc-300">
                 {edu.degree}
               </p>
-              <p className="text-xs text-zinc-500 dark:text-zinc-400 pt-1">
+              <p className="text-xs text-zinc-600 dark:text-zinc-400 pt-1">
                 {edu.description}
               </p>
             </div>
-            <div className="shrink-0 font-mono text-xs text-zinc-500 dark:text-zinc-400 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 rounded self-start md:self-auto">
+            <div className="shrink-0 font-mono text-xs text-zinc-700 dark:text-zinc-300 bg-zinc-100 dark:bg-zinc-800 px-3 py-1 rounded self-start md:self-auto">
               {edu.period}
             </div>
           </Card>

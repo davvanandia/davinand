@@ -14,17 +14,17 @@ export function Organizations() {
         {organizations.map((org) => (
           <Card key={`${org.role}-${org.period}`} className="p-5 space-y-3">
             <div className="space-y-1">
-              <span className="text-xs font-mono text-zinc-500 dark:text-zinc-400">
+              <span className="text-xs font-mono text-zinc-600 dark:text-zinc-400">
                 {org.period}
               </span>
               <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
                 {org.role}
               </h3>
-              <p className="text-xs text-emerald-600 dark:text-emerald-400 font-medium">
+              <p className="text-xs text-emerald-700 dark:text-emerald-400 font-medium">
                 {org.organization}
               </p>
             </div>
-            <p className="text-xs text-zinc-600 dark:text-zinc-400 leading-relaxed">
+            <p className="text-xs text-zinc-700 dark:text-zinc-300 leading-relaxed">
               {org.description}
             </p>
             <div className="flex flex-wrap gap-1.5 pt-1">

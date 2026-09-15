@@ -21,7 +21,6 @@ export function Navbar() {
         });
       },
       {
-        // ✅ Offset supaya "aktif" ketika section sudah melewati navbar
         rootMargin: "-80px 0px -60% 0px",
         threshold: 0,
       }
@@ -40,15 +39,18 @@ export function Navbar() {
             e.preventDefault();
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
-          className="font-semibold tracking-tight text-zinc-900 dark:text-zinc-100 hover:text-emerald-600 dark:hover:text-emerald-400 cursor-pointer"
+          className="font-semibold tracking-tight text-zinc-900 dark:text-zinc-100 hover:text-emerald-700 dark:hover:text-emerald-400 cursor-pointer"
         >
           davina
-          <span className="text-emerald-600 dark:text-emerald-400 font-mono">
+          <span className="text-emerald-700 dark:text-emerald-400 font-mono">
             nd
           </span>
         </a>
 
-        <nav className="flex items-center gap-6 text-sm font-medium text-zinc-600 dark:text-zinc-400">
+        <nav
+          aria-label="Main navigation"
+          className="flex items-center gap-6 text-sm font-medium text-zinc-700 dark:text-zinc-300"
+        >
           <div className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => {
               const isActive = active === link.href;
@@ -58,7 +60,7 @@ export function Navbar() {
                   href={link.href}
                   className={`transition-colors ${
                     isActive
-                      ? "text-emerald-600 dark:text-emerald-400 font-semibold"
+                      ? "text-emerald-700 dark:text-emerald-400 font-semibold"
                       : "hover:text-zinc-950 dark:hover:text-white"
                   }`}
                 >

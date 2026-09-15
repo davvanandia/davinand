@@ -7,10 +7,13 @@ import { Education } from "@/components/sections/Education";
 import { Certifications } from "@/components/sections/Certifications";
 import { Projects } from "@/components/sections/Projects";
 import { Contact } from "@/components/sections/Contact";
-import { siteConfig, experiences, organizations, educations, projects, contacts } from "@/data/portfolio";
+import {
+  siteConfig,
+  educations,
+  contacts,
+} from "@/data/portfolio";
 
 export default function Home() {
-  // Structured Data (JSON-LD) for SEO
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -25,9 +28,7 @@ export default function Home() {
       "@type": "EducationalOrganization",
       name: e.institution,
     })),
-    sameAs: contacts
-      .filter((c) => c.icon !== "email")
-      .map((c) => c.href),
+    sameAs: contacts.filter((c) => c.icon !== "email").map((c) => c.href),
   };
 
   return (
@@ -39,7 +40,7 @@ export default function Home() {
       <Navbar />
       <main className="max-w-content mx-auto px-6 py-14 md:py-20 space-y-24">
         <Hero />
-        <div id="experiences" className="space-y-16">
+        <div id="experiences" className="space-y-16 scroll-mt-20">
           <Experiences />
           <Organizations />
           <Education />

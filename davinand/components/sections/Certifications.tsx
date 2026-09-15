@@ -15,8 +15,14 @@ export function Certifications() {
           className="p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-4"
         >
           <div className="flex items-start gap-4">
-            <div className="p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950/40 text-emerald-600 dark:text-emerald-400 border border-emerald-200/50 dark:border-emerald-800/40 shrink-0">
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <div className="p-3 rounded-lg bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-400 border border-emerald-200/50 dark:border-emerald-800/40 shrink-0">
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -29,10 +35,10 @@ export function Certifications() {
               <h3 className="text-base font-semibold text-zinc-900 dark:text-zinc-100">
                 {cert.title}
               </h3>
-              <p className="text-sm text-zinc-600 dark:text-zinc-400">
+              <p className="text-sm text-zinc-700 dark:text-zinc-300">
                 {cert.issuer}
               </p>
-              <p className="text-xs font-mono text-zinc-500 dark:text-zinc-400 pt-1">
+              <p className="text-xs font-mono text-zinc-600 dark:text-zinc-400 pt-1">
                 Issued {cert.issued} · Expires {cert.expires}
               </p>
             </div>
@@ -40,10 +46,16 @@ export function Certifications() {
 
           <div className="shrink-0">
             <a
-              href={cert.credentialUrl || "https://www.linkedin.com/in/davina-anandia-34bab5329/overlay/Certifications/235561389/treasury/?profileId=ACoAAFLsJqsBDPYtG5uvVhnW5NIUTStd2J9Psqc&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BEFjbcD%2BVTRuNLotxMhCpmg%3D%3D"}
-              className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg text-xs font-mono font-medium border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-700 text-zinc-700 dark:text-zinc-200 shadow-sm transition"
+              href={"https://www.linkedin.com/in/davina-anandia-34bab5329/overlay/Certifications/235561389/treasury?profileId=ACoAAFLsJqsBDPYtG5uvVhnW5NIUTStd2J9Psqc"}
+              className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg text-xs font-mono font-medium border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-700 text-zinc-800 dark:text-zinc-100 shadow-sm transition"
             >
-              <svg className="w-4 h-4 text-emerald-600 dark:text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <svg
+                className="w-4 h-4 text-emerald-700 dark:text-emerald-400"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
